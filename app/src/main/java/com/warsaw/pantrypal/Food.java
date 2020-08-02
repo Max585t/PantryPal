@@ -1,5 +1,7 @@
 package com.warsaw.pantrypal;
 
+import java.util.HashMap;
+
 public class Food {
     String name;
     int units;
