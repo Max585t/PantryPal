@@ -22,10 +22,6 @@ public class Recipe {
         this.notes = notes;
     }
 
-    public void setName(String newName){
-        name = newName;
-    }
-
     public void addInstruction(String newInstruction){
         numSteps++;
         instructions[numSteps] = newInstruction;
@@ -33,6 +29,19 @@ public class Recipe {
 
     public void addIngredient (Food newIngredient){
         ingredients.put(newIngredient.name, newIngredient);
+    }
+
+    public void setName(String newName){
+        name = newName;
+    }
+
+    public void setInstructions(String[] instructions, int numSteps) {
+        this.instructions = instructions;
+        this.numSteps = numSteps;
+    }
+
+    public void setIngredients(Map<String, Food> ingredients) {
+        this.ingredients = ingredients;
     }
 
     public void setTime(int newTime){
