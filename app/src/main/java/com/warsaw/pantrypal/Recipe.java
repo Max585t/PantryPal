@@ -11,8 +11,9 @@ public class Recipe {
     private int numSteps;
     public String comments; //maybe make comments and notes a list of strings
     public String notes;
+    public String[] equipment = new String[20];
 
-    public Recipe(String name, String[] instructions, Map<String, Food> ingredients, float time, int numSteps, String comments, String notes){
+    public Recipe(String name, String[] instructions, Map<String, Food> ingredients, float time, int numSteps, String comments, String notes, String[] equipment){
         this.name = name;
         this.instructions = instructions;
         this.ingredients = ingredients;
@@ -20,6 +21,7 @@ public class Recipe {
         this.numSteps = numSteps;
         this.comments = comments;
         this.notes = notes;
+        this.equipment = equipment;
     }
 
     public void addInstruction(String newInstruction){
@@ -54,6 +56,14 @@ public class Recipe {
 
     public void setNotes(String newNotes){
         notes = newNotes;
+    }
+
+    public String[] getEquipment() {
+        return equipment;
+    }
+
+    public void setEquipment(String[] equipment) {
+        this.equipment = equipment;
     }
 
     public String getName(){
