@@ -13,6 +13,10 @@ public class Recipe {
     public String notes;
     public String[] equipment = new String[20];
 
+    public Recipe(){
+
+    }
+
     public Recipe(String name, String[] instructions, Map<String, Food> ingredients, float time, int numSteps, String comments, String notes, String[] equipment){
         this.name = name;
         this.instructions = instructions;
@@ -46,7 +50,7 @@ public class Recipe {
         this.ingredients = ingredients;
     }
 
-    public void setTime(int newTime){
+    public void setTime(float newTime){
         time = newTime;
     }
 

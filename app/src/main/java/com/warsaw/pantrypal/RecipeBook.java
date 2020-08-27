@@ -20,5 +20,10 @@ public class RecipeBook {
 
     public void addRecipe(Recipe newRecipe){
         recipeBook.put(newRecipe.name, newRecipe);
+        //sort(recipeBook);
     }
+    /*
+    private void sort(Map<String, Recipe> recipeBook){
+
+    }*/
 }
